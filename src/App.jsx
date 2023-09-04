@@ -18,13 +18,14 @@ const drumSounds = {
 
 function App() {
   const [lastButtonClicked, setLastButtonClicked] = React.useState(``)
-  const [volume, setVolume] = React.useState(0)
+  const [volume, setVolume] = React.useState(.5)
   const soundsArray = Object.keys(drumSounds)
   const pressedKeys = soundsArray.map(sound => drumSounds[sound].key)
 
   function playSound(sound) {
     setLastButtonClicked(drumSounds[sound].name)
     const audioElement = document.getElementById(sound);
+    console.log(audioElement)
     if (audioElement) {
       audioElement.currentTime = 0;
       audioElement.volume = volume
@@ -37,18 +38,18 @@ function App() {
   }
 
   const handleKeyPress = (event) => {
+    console.log(event.key)
     const key = event.key.toUpperCase()
     const sound = Object.keys(drumSounds).find(
       (sound) => drumSounds[sound].key === key
     )
-    if (sound) {
-      playSound(sound)
-    }
+    console.log("Selected sound:", sound)
+    playSound(sound)
   }
 
   React.useEffect(() => {
     window.addEventListener('keydown', handleKeyPress)
-  }, [])
+  }, [volume])
 
   const DrumPadElements = () => {
     const drumPads = soundsArray.map((sound, index) => (
