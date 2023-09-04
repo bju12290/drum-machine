@@ -1,0 +1,45 @@
+.soundpad--container {
+  display: grid;
+  background-color: #818181;
+  width: 55vw;
+  height: 50vh;
+  border-radius: 5px;
+  position: absolute;
+  top:  50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+.drumPads--container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  height: 85%;
+  margin: 15px;
+}
+
+.logo {
+  margin-left: 15px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-top: 6px;
+}
+
+img {
+  font-weight: normal;
+  font-size: 1rem;
+  width: 1.25rem;
+  margin-right: .2rem;
+}
+
+.display{
+  font-weight: bold;
+  font-size: 1rem;
+  margin-left: .5em;
+}
+
+.display--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
