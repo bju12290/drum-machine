@@ -31,7 +31,7 @@ Feel free to contact via email!
 ```brian.phartnettjr@gmail.com```
  #### Known Issues
  
- - There are no known issues at this time, if you find any feel free to let me know :)
+ - Pull the Volume Slider all the way to the left and you'll see it, it's _hideous_.
 
  #### Project Goals
 
