@@ -43,3 +43,96 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
+
+@media only screen and (max-width: 576px) {
+  .soundpad--container {
+    display: grid;
+    background-color: #818181;
+    width: 90vw;
+    height: 55vh;
+    border-radius: 5px;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .drumPads--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 75%;
+  }
+
+  .display{
+    font-weight: bold;
+    font-size: .8rem;
+    margin-left: .5em;
+  }
+
+  .logo {
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-top: 6px;
+  }
+
+  img {
+    font-weight: normal;
+    font-size: .5rem;
+    width: 1rem;
+    margin-right: .1rem;
+    margin-left: -.5rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .soundpad--container {
+    display: grid;
+    background-color: #818181;
+    width: 90vw;
+    height: 55vh;
+    border-radius: 5px;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .drumPads--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 85%;
+  }
+
+  .display{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: .5em;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 578px) {
+  .soundpad--container {
+    display: grid;
+    background-color: #818181;
+    width: 90vw;
+    height: 55vh;
+    border-radius: 5px;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+
+  .drumPads--container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 85%;
+  }
+
+  .display{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-left: .5em;
+  }
+}
